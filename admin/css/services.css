@@ -1,0 +1,194 @@
+.left-part .item:nth-child(2)::after {
+  width: 20%;
+  height: 100%;
+  content: "";
+  background-color: rgb(241, 231, 231);
+  border-radius: 100% 0% 0% 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.right-part .services {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.right-part .services .header {
+  width: 100%;
+  /* height: 7dvh; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: end; */
+  /* background-color: #3e3d3c; */
+  padding: 1%;
+  margin-bottom: 1%;
+}
+.right-part .services .header #adding {
+  color: blue;
+  cursor: pointer;
+}
+.right-part .services .header .short-add {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.right-part .services .header .short-add .short {
+  width: 35%;
+  height: 80%;
+  border: 1px solid;
+  /* text-align: center; */
+  position: relative;
+  padding: 2%;
+}
+.right-part .services .header .short-add .short::after {
+  width: 10px;
+  height: 10px;
+  content: "";
+  position: absolute;
+  /* background-color: black; */
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(-135deg);
+  bottom: 10px;
+  right: 10px;
+}
+#drop-list {
+  position: absolute;
+  right: 17%;
+  top: 6%;
+  background-color: #020024;
+  padding: 1%;
+  display: none;
+}
+#drop-list p {
+  width: 100%;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.right-part .services .service-container {
+  width: 100%;
+  height: auto;
+}
+.right-part .services .service-container .service-card {
+  display: flex;
+  width: 100%;
+  height: 20dvh;
+  padding: 1%;
+  margin-bottom: 1%;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #020024;
+}
+.right-part .services .service-container .service-card .image-part {
+  width: 16.5%;
+  height: 100%;
+  background-color: #7c4919;
+  /* border-radius: 50%; */
+}
+.right-part .services .service-container .service-card .image-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.model {
+  display: none;
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.41);
+}
+.model .model-container {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2%;
+  position: relative;
+}
+.model .model-container .model-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.model .model-container .addservice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.model .model-container .addservice .service-image {
+  width: 25%;
+  height: 12rem;
+  background-color: #1f1e2090;
+  position: relative;
+}
+#sinput {
+  display: none;
+}
+#service-img {
+  visibility: hidden;
+  position: absolute;
+}
+#plush {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.model .model-container .addservice .service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.model .model-container .addservice .form-container {
+  margin-left: 1%;
+  width: 75%;
+  /* background-color: #7c4919; */
+}
+.model .model-container .addservice .form-container label {
+  font-weight: 600;
+  margin-left: 1%;
+  font-size: 110%;
+}
+/* Chrome, Safari, Edge, Opera */
+.model
+  .model-container
+  .addservice
+  .form-container
+  form
+  input[type="number"]::-webkit-outer-spin-button,
+.model
+  .model-container
+  .addservice
+  .form-container
+  form
+  input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.model .model-container .addservice .form-container form input,
+.model .model-container .addservice .form-container form select {
+  width: 100%;
+  height: 2rem;
+  outline: none;
+  padding-left: 0.6%;
+}
+.model .model-container .addservice .form-container form input[type="submit"] {
+  width: 30%;
+  height: 2rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 3%;
+}

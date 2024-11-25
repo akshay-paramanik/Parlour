@@ -1,0 +1,33 @@
+.left-part .item:nth-child(4)::after {
+  width: 20%;
+  height: 100%;
+  content: "";
+  background-color: rgb(241, 231, 231);
+
+  border-radius: 100% 0% 0% 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.appointment-container {
+  width: 100%;
+  height: 100%;
+}
+.appointment-data {
+  width: 100%;
+  height: 100%;
+}
+.appointment-data table {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.appointment-data table th {
+  background-color: #4f4f4f;
+  color: white;
+  padding: 0.5%;
+}
+.appointment-data table td {
+  padding: 0.4%;
+  border-bottom: 2px dotted;
+}

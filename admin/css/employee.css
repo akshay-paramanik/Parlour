@@ -1,0 +1,174 @@
+.left-part .item:nth-child(6)::after {
+  width: 20%;
+  height: 100%;
+  content: "";
+  background-color: rgb(241, 231, 231);
+  border-radius: 100% 0% 0% 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.employee {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.employee .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+.employee .header #adding {
+  color: blue;
+  cursor: pointer;
+}
+.employee-container {
+  width: 100%;
+  height: auto;
+}
+.employee-container .employee-card {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  margin-bottom: 1%;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #020024;
+}
+.employee-card .name-skill {
+  display: flex;
+  flex-direction: column;
+}
+.employee-card .appointments {
+  display: flex;
+  flex-direction: column;
+}
+.employee-card .image-part {
+  width: 18%;
+  height: 100%;
+  background-color: #002423;
+}
+.employee-card .image-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.employee-card .description {
+  width: 18%;
+  height: 100%;
+  overflow: scroll;
+}
+.employee-card .description::-webkit-scrollbar {
+  display: none;
+}
+.model {
+  display: none;
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.41);
+}
+.model .model-container {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2%;
+  position: relative;
+}
+.model .model-container .model-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.model .model-container .addemployee {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.model .model-container .addemployee .employee-image {
+  width: 25%;
+  height: 12rem;
+  background-color: #1f1e2090;
+  position: relative;
+}
+#empinput {
+  display: none;
+}
+#emp-img {
+  visibility: hidden;
+  position: absolute;
+}
+#plush {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+#closeWin {
+  cursor: pointer;
+}
+.model .model-container .addemployee .employee-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.model .model-container .addemployee .form-container {
+  margin-left: 1%;
+  width: 75%;
+  /* background-color: #7c4919; */
+}
+.model .model-container .addemployee .form-container label {
+  font-weight: 600;
+  margin-left: 1%;
+  font-size: 110%;
+}
+/* Chrome, Safari, Edge, Opera */
+.model
+  .model-container
+  .addemployee
+  .form-container
+  form
+  input[type="number"]::-webkit-outer-spin-button,
+.model
+  .model-container
+  .addemployee
+  .form-container
+  form
+  input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.model .model-container .addemployee .form-container form input,
+.model .model-container .addemployee .form-container form select {
+  width: 100%;
+  height: 2rem;
+  outline: none;
+  padding-left: 0.6%;
+}
+.model .model-container .addemployee .form-container form input[type="submit"] {
+  width: 30%;
+  height: 2rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 3%;
+}
+#desc {
+  height: 8rem;
+}
