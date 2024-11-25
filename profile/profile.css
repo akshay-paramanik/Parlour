@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  /* padding: 1% 5% 0% 0%; */
+  background-color: #211f1ffc;
+  padding-right: 2%;
+}
+.brand {
+  display: inline-block;
+  background-color: #7c4919;
+  width: 23%;
+  text-align: center;
+  padding: 1%;
+  font-size: 150%;
+  color: white;
+  height: 100%;
+}
+.brand h1 {
+  font-family: "Lugrasimo", cursive;
+}
+.logout {
+  /* width: 20%; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: #7c4919; */
+}
+.logout a {
+  color: white;
+}
+.top {
+  width: 100%;
+  height: 11rem;
+  /* background-color: #7c4919; */
+  margin: 1% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+}
+.top .name-image {
+  width: 40%;
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.top .name-image .image-part {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+  /* background-color: blue; */
+}
+.top .name-image .image-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.top .appointment-count {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.top .appointment-count p {
+  font-size: 20px;
+}
+.edit-profile {
+  width: 50%;
+  height: 2rem;
+  background-color: green;
+  color: white;
+  text-align: center;
+  place-content: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0;
+}
+.bottom .tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bottom .tabs .btn-group {
+  color: white;
+  border: none;
+  font-size: 17px;
+  background-color: #af3514;
+}
+.bottom .tabs .btn-group:nth-child(1) {
+  width: 14%;
+  height: 3rem;
+}
+.bottom .tabs .btn-group:nth-child(2) {
+  width: 17%;
+  height: 3rem;
+}
+.bottom .tabs .btn-group:nth-child(3) {
+  width: 8%;
+  height: 2rem;
+}
+.active {
+  background-color: #383c33 !important;
+}
+.tab-content {
+  width: 100%;
+  height: auto;
+  margin: 2% 0;
+}
+#apnt-done {
+  display: none;
+  width: 100%;
+}
+#apnt-done table {
+  width: 100%;
+  text-align: center;
+}
+#apnt-pendding {
+  display: none;
+  width: 100%;
+}
+#apnt-pendding table {
+  width: 100%;
+  text-align: center;
+}
+#galary {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 2%; */
+  row-gap: 2%;
+  place-items: center;
+  padding: 1%;
+  display: none;
+}
+.galary-image {
+  width: 80%;
+  height: 15rem;
+  background-color: #7c4919;
+}
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: #211f1ffc;
+    padding-right: 2%;
+  }
+  .brand {
+    display: inline-block;
+    background-color: #7c4919;
+    width: 50%;
+    /* height: 100%; */
+    text-align: center;
+    padding: 1%;
+    color: white;
+    /* height: 150%; */
+    font-size: 120%;
+  }
+  .brand h1 {
+    font-family: "Lugrasimo", cursive;
+  }
+  .logout {
+    /* width: 20%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: #7c4919; */
+  }
+  .top {
+    width: 100%;
+    height: 11rem;
+    /* background-color: #7c4919; */
+    margin: 1% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1%;
+  }
+  .top .name-image {
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .top .name-image .image-part {
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+    /* background-color: blue; */
+  }
+  .top .name-image .image-part img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .top .appointment-count {
+    width: 60%;
+    /* height: 60%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+    text-align: center;
+  }
+  .top .appointment-count p {
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    width: 15%;
+    height: 60%;
+    place-content: center;
+  }
+  .edit-profile {
+    width: 50%;
+    height: 2rem;
+    background-color: green;
+    position: relative;
+    left: 0;
+    transform: translate(5%);
+  }
+  .bottom .tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .bottom .tabs .btn-group {
+    font-size: 12px;
+  }
+  .bottom .tabs .btn-group:nth-child(1) {
+    width: 30%;
+    height: 3rem;
+  }
+  .bottom .tabs .btn-group:nth-child(2) {
+    width: 30%;
+    height: 3rem;
+  }
+  .bottom .tabs .btn-group:nth-child(3) {
+    width: 30%;
+    height: 2rem;
+  }
+  #apnt-done {
+    display: none;
+    width: 100%;
+  }
+  #apnt-done table {
+    font-size: 9px;
+  }
+  #apnt-pendding {
+    display: none;
+    width: 100%;
+  }
+  #apnt-pendding table {
+    font-size: 9px;
+  }
+  #galary {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 2%; */
+    row-gap: 2%;
+    place-items: center;
+    padding: 1%;
+    display: none;
+  }
+  .galary-image {
+    width: 80%;
+    height: 7rem;
+    background-color: #7c4919;
+  }
+}
